@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.test.lyx.sign_in_sys.LocalMeetingList">
+
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/menu_uploadList"
+        android:title="上传本会议签到人员信息"
+        app:showAsAction="never" />
+
+
+
+
+
+
+
+
+</menu>

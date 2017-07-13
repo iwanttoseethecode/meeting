@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.test.lyx.sign_in_sys.LocalMeetingList">
+
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/menu_load"
+        android:title="下载本会议参会人员信息"
+        app:showAsAction="never" />
+
+
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/menu_deletePerson"
+        android:title="删除所有参会人员信息"
+        app:showAsAction="never" />
+
+
+
+
+
+</menu>

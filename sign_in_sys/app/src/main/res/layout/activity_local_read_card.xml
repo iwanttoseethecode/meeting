@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_read_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context="com.test.lyx.sign_in_sys.ReadCardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/local_read_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <TextView
+                android:textColor="@color/milky_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/toolbarTextSize"
+                android:text="本地读卡"
+                android:layout_gravity="center"
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/local_read_card_back"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@mipmap/read_background"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/local_layout_sign_num"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg_small"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:visibility="gone">
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/local_card_pic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/avatar"
+        android:visibility="gone" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/local_card_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="姓名：张三"
+        android:textSize="@dimen/newsTextSize"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/local_card_dname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="部门：研发中心"
+        android:textSize="@dimen/newsTextSize"
+        android:visibility="gone" />
+
+
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg_small"
+        android:onClick="querySignList"
+        android:text="查询本地已签到列表"
+        android:gravity="center"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/smallText" />
+
+
+</LinearLayout>

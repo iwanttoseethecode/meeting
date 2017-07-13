@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">会议签到系统</string>
+    <string name="account_pass_error">账号或密码错误，登录失败</string>
+    <string name="account_pass_empty">请填写用户名或密码</string>
+    <string name="no_network_tip">没有网络连接!</string>
+    <string name="connect_failed_tips">与服务器连接失败</string>
+    <string name="no_data_tips">该时间段没有数据！</string>
+    <string name="no_card_info">卡号错误或无此卡对应数据！</string>
+</resources>

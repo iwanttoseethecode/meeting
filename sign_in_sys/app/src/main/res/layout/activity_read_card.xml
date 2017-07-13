@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_read_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context="com.test.lyx.sign_in_sys.ReadCardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/card_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/read_card_back"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@mipmap/read_background"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_sign_num"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg_small"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:src="@drawable/sign" />
+
+
+        <TextView
+            android:id="@+id/sign_number"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="已签到：19 人"
+            android:textColor="@color/orange_exit"
+            android:textSize="@dimen/smallText" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/card_pic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/avatar"
+        android:visibility="gone" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/card_name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="姓名：张三"
+        android:textSize="@dimen/newsTextSize"
+        android:visibility="gone" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/card_num"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="编号：1008611"
+        android:textSize="@dimen/newsTextSize"
+        android:visibility="gone" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/card_dname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="部门：研发中心"
+        android:textSize="@dimen/newsTextSize"
+        android:visibility="gone" />
+
+
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners_bg_small"
+        android:onClick="querySignList"
+        android:text="查询签到列表"
+        android:gravity="center"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/smallText" />
+
+
+</LinearLayout>

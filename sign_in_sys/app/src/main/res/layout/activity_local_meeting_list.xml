@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meeting_lists"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.lyx.sign_in_sys.MeetingListsActivity"
+    android:background="@color/milky_white"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <TextView
+                android:textColor="@color/milky_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/toolbarTextSize"
+                android:text="本地会议列表"
+                android:layout_gravity="center"
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/local_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/time_background" />
+
+        <TextView
+            android:id="@+id/local_xq"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="星期五"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbarTextSize" />
+
+        <TextView
+            android:id="@+id/local_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local_xq"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="2017 年 3月 14 日 09:33"
+            android:textColor="@color/white"
+            android:textSize="@dimen/newsTextSize" />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:id="@+id/local_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_margin" />
+
+
+</LinearLayout>

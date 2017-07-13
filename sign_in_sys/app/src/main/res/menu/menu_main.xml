@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.test.lyx.sign_in_sys.LocalMeetingList">
+
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/menu_edit"
+        android:title="刷新本地会议数据"
+        app:showAsAction="never" />
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/menu_delete"
+        android:title="清除本地会议数据"
+        app:showAsAction="never" />
+
+
+
+
+</menu>
